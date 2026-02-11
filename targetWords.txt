@@ -1,8 +1,0 @@
-dogs
-cats
-kitten
-puppy
-dog
-doggie
-kittens
-cat
