@@ -1,0 +1,275 @@
+hooves
+hoof
+hoofs
+horse
+horses
+pony
+ponies
+horsey
+horsie
+horsy
+horseback
+mare
+mares
+stallion
+stallions
+gelding
+geldings
+foal
+foals
+colt
+colts
+filly
+fillies
+yearling
+yearlings
+weanling
+broodmare
+mustang
+mustangs
+bronc
+bronco
+broncs
+broncos
+wildhorse
+wild horse
+feral horse
+equine
+equines
+equestrian
+equestrienne
+equestrians
+riding
+ride
+rides
+rider
+riders
+saddle
+saddles
+saddling
+tack
+tackroom
+tack room
+bridle
+bridles
+bit
+bits
+snaffle
+curb bit
+reins
+rein
+stirrup
+stirrups
+girth
+cinch
+cinches
+halter
+halters
+lead rope
+leadrope
+leadline
+lunge
+lunging
+lungeing
+lunge line
+longe
+longeing
+saddlepad
+saddle pad
+saddle pads
+blanket
+turnout blanket
+fly sheet
+fly mask
+flymask
+martingale
+breastplate
+harness
+harnesses
+bell boots
+splint boots
+polo wraps
+leg wraps
+grooming
+groom
+groomer
+groomers
+mane
+manes
+main
+forelock
+withers
+fetlock
+fetlocks
+pastern
+pasterns
+cannon bone
+cannonbone
+hock
+hocks
+gaskin
+flank
+flanks
+muzzle
+muzzel
+nostril
+nostrils
+poll
+barrel
+croup
+dock
+tail
+tails
+hoofprint
+hoof print
+hoofprints
+horseshoe
+horse shoe
+horseshoes
+horse shoes
+farrier
+farriers
+shoeing
+reshoe
+reshoeing
+hoofpick
+hoof pick
+hoofcare
+hoof care
+hoof trim
+trimming
+hoof oil
+hoof boot
+hoof boots
+hoof wall
+hoof balm
+trot
+trotting
+canter
+cantering
+gallop
+galloping
+lope
+loping
+jog
+pace
+pacing
+prance
+prancing
+walk
+walking
+pivot
+jump
+jumps
+jumping
+rear
+rearing
+kick
+kicking
+buck
+bucks
+bucking
+racing
+racehorse
+racehorses
+racetrack
+derby
+dressage
+showjumping
+show jumping
+eventing
+hunter
+hunters
+jumper
+jumpers
+equitation
+western
+western riding
+english
+english riding
+trail ride
+trail riding
+endurance riding
+rodeo
+barrel racing
+pole bending
+reining
+cutting
+roping
+team roping
+polo
+carriage driving
+driving
+stable
+stables
+barn
+barns
+barnyard
+stall
+stalls
+pasture
+pastures
+paddock
+paddocks
+corral
+corrals
+arena
+riding arena
+hay
+hay bale
+haybale
+oats
+grain
+feed
+trough
+water trough
+pony club
+ponyclub
+horse show
+show season
+tack up
+giddy up
+giddyup
+yeehaw
+yee-haw
+neigh
+neighing
+clip clop
+clipclop
+mule
+mules
+hinny
+burro
+donkey
+donkeys
+steed
+steeds
+mount
+mounts
+arabian
+arabians
+thoroughbred
+thoroughbreds
+quarter horse
+quarterhorse
+appaloosa
+paint horse
+paint
+clydesdale
+shire
+friesian
+frieisian
+andalusian
+warmblood
+warm blood
+morgan
+shetland
+miniature horse
+mini horse
+mini pony
+standardbred
+connemara
+welsh pony
+hackney
+zebra
+zebras
