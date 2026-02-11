@@ -1,3 +1,4 @@
+
 /*
  * Problem 2.3.1 Sell My Pet Food
  * 
@@ -13,16 +14,14 @@ import java.io.*;
 /**
  * A DataCollector class to manage social media posts
  */
-public class DataCollector
-{
+public class DataCollector {
   private ArrayList<String> socialMediaPosts;
   private ArrayList<String> targetWords;
   private Scanner sc;
   private int currentPost;
   private int currentTargetWord;
 
-  public DataCollector()
-  {
+  public DataCollector() {
     socialMediaPosts = new ArrayList<String>();
     targetWords = new ArrayList<String>();
     currentPost = 0;
@@ -34,34 +33,37 @@ public class DataCollector
    * targetWordsFilename (including punctuation), with words separated by a single
    * space
    * 
-   * @param socialMediaPostsFilename the name of the file containing social media posts
-   * @param targetWordsFilename the name of the file containing the target words
+   * @param socialMediaPostsFilename the name of the file containing social media
+   *                                 posts
+   * @param targetWordsFilename      the name of the file containing the target
+   *                                 words
    */
   public void setData(String socialMediaPostsFilename, String targetWordsFilename) {
     // read in the social media posts found in socialMediaPosts
-    // a try is like an if statement, "throwing" an error if the body of the try fails
-    try
-    {
+    // a try is like an if statement, "throwing" an error if the body of the try
+    // fails
+    try {
       sc = new Scanner(new File(socialMediaPostsFilename));
-      while (sc.hasNextLine())
-      {
+      while (sc.hasNextLine()) {
         // String method trim removes whitespace before and after a string
         String temp = sc.nextLine().trim();
         // DEBUG: System.out.println(temp);
         this.socialMediaPosts.add(temp);
       }
-    } catch (Exception e) { System.out.println("Error reading or parsing" + socialMediaPosts + "\n" + e); }
+    } catch (Exception e) {
+      System.out.println("Error reading or parsing" + socialMediaPosts + "\n" + e);
+    }
 
     // read in the target words in targetWords
-    try
-    {
+    try {
       sc = new Scanner(new File(targetWordsFilename));
-      while (sc.hasNextLine())
-      {
+      while (sc.hasNextLine()) {
         // String method trim removes whitespace before and after a string
         this.targetWords.add(sc.nextLine().trim());
       }
-    } catch (Exception e) { System.out.println("Error reading or parsing" + targetWords + "\n" + e); }
+    } catch (Exception e) {
+      System.out.println("Error reading or parsing" + targetWords + "\n" + e);
+    }
   }
 
   public ArrayList<String> getPosts() {
@@ -71,8 +73,8 @@ public class DataCollector
   public boolean containsTargetWord(String post) {
     String[] postWords = post.split(" ");
     for (String word : postWords) {
-      if (this.targetWords.contains(word)) {
-        return false;
+      for (String targetWord : targetWords) {
+        if (word.contains(targetWord)) return false;
       }
     }
 
@@ -80,20 +82,16 @@ public class DataCollector
   }
 
   /**
-   * Get the next post in socialMediaPosts with words separated by a single space, 
+   * Get the next post in socialMediaPosts with words separated by a single space,
    * or "NONE" if there is no more data.
    * 
    * @return a string containing one of the lines in socialMediaPosts
    */
-  public String getNextPost()
-  {
-    if (currentPost < socialMediaPosts.size())
-    {
+  public String getNextPost() {
+    if (currentPost < socialMediaPosts.size()) {
       this.currentPost++;
       return socialMediaPosts.get(currentPost - 1);
-    }
-    else
-    {
+    } else {
       return "NONE";
     }
   }
@@ -104,15 +102,11 @@ public class DataCollector
    * 
    * @return a string containing one of the lines in targetWords
    */
-  public String getNextTargetWord()
-  {
-    if (currentTargetWord < targetWords.size())
-    {
+  public String getNextTargetWord() {
+    if (currentTargetWord < targetWords.size()) {
       this.currentTargetWord++;
       return targetWords.get(currentTargetWord - 1);
-    }
-    else
-    {
+    } else {
       this.currentTargetWord = 0;
       return "NONE";
     }
@@ -121,34 +115,28 @@ public class DataCollector
   /**
    * Create a File named filename and stores all the usernames to target
    * 
-   * @param filename The name to save the file, must include .txt
+   * @param filename  The name to save the file, must include .txt
    * @param usernames A string containing the usernames of people to target,
-   * usernames are separated by a space.
+   *                  usernames are separated by a space.
    */
-  public void prepareAdvertisement(String filename, String usernames, String advertisement)
-  {
-    try
-    {
+  public void prepareAdvertisement(String filename, String usernames, String advertisement) {
+    try {
       FileWriter fw = new FileWriter(filename);
       // Strin method split splits a string based on the provided token
       // and returns an array of individual substrings
-      for (String un : usernames.split(" "))
-      {
-          fw.write("@" + un + " " + advertisement +"\n");
+      for (String un : usernames.split(" ")) {
+        fw.write("@" + un + " " + advertisement + "\n");
       }
       fw.close();
-    }
-    catch (IOException e)
-    {
-        System.out.println("Could not write to file. " + e);
+    } catch (IOException e) {
+      System.out.println("Could not write to file. " + e);
     }
   }
 
   /**
    * Print the array of posts
    */
-  public void printAllPosts()
-  {
+  public void printAllPosts() {
     for (String post : this.socialMediaPosts)
       System.out.println(post);
   }
@@ -156,8 +144,7 @@ public class DataCollector
   /**
    * Print the array of target words
    */
-  public void printAllTargetWords()
-  {
+  public void printAllTargetWords() {
     for (String word : this.targetWords)
       System.out.println(word);
   }
